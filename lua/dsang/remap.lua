@@ -17,6 +17,12 @@ vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
 
+-- tabs remaps
+local opts = { noremap = true, silent = true }
+vim.keymap.set("n", "m.", "<Cmd>BufferNext<CR>", opts)
+vim.keymap.set("n", "m,", "<Cmd>BufferPrevious<CR>", opts)
+
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
